@@ -19,6 +19,6 @@ public class CoffeesResource {
     @GET
     @Path("/price")
     public Response getItemsPrice() {
-        return Response.ok(coffees.getPrice()).build();
+        return Response.ok(coffees.getPrice().getValue()).build();
     }
 }
